@@ -1,20 +1,24 @@
 # Puerto Rico Arbovirus Data
-We are digitizing the weekly arbovirus reports from the Departamento de Salud in Puerto Rico.  They are originally provided as PDFs.  Please see the original data here  http://www.salud.gov.pr/Estadisticas-Registros-y-Publicaciones/.  It's really critical to point out that we haven't yet performed proper validation on these data and would very much welcome contributors who are either interested in suggesting code changes, validating data, and/or contributing new data sets.
+We are digitizing the weekly arbovirus reports from the Departamento de Salud in Puerto Rico.  They are originally provided as PDFs.  Please see the original data here  http://www.salud.gov.pr/Estadisticas-Registros-y-Publicaciones/ and here https://predict.phiresearchlab.org/post/5a4fcc3e2c1b1669c22aa261.  It's really critical to point out that we haven't yet performed proper validation on these data and would very much welcome contributors who are either interested in suggesting code changes, validating data, and/or contributing new data sets. In addition, please see the specific license, warranty, and copyright information for our code and each individual data set.
 
 ## Informes Arbovirales
-
 ### Filename
-
 Data/Informes_Arbovirales_1532444481.14413-years-2016-2017-2018.csv
 
 ### Puerto Rico level data on arboviruses between 2016 - present
-
+#### Description
 The first data set we've completed is Informes Arbovirales.  These PDFs report weekly confirmed cases of dengue (DENV), chikungunya (CHIKV), Zika (ZIKV), and filoviruses--along with suspected cases of arboviral diseases--on a weekly basis.  The cumulative columns are the running cumulative for each disease for the year (and it appears as though 2017 includes 2016) and it's possible for the difference in sequential weeks to be negative because cases can be "back corrected" causing a reduction in the total number of cumulative cases.  The "new" columns are the number of new cases reported that week.  However, they are reported as running 3-4 week totals.  The "Group" column contains the weeks one needs to use to generate the new case counts for that week.  We plan on writing code to parse these and organize them, but haven't yet completed that work.
 
-## San Juan Dengue Data
-
+## chikungunya
 ### Filename
+Data/chikungunya_1532458510.44679-years-2014-2015-2016.csv
 
+### Puerto Rico level data on chikungunya data between 2014 - 2015
+#### Description
+These PDFs report weekly confirmed cases and suspected cases of chikungunya (CHIKV) and confirmed cases of co-infection with dengue (although it appears as though there weren't any and the DoH stopped reporting this field in 2016) on a weekly basis.  The "new" columns are the number of new cases reported that week.  However, they are reported as running 3-4 week totals (expect in 2014 where they were presented weekly).  The "Group" column contains the weeks one needs to use to generate the new case counts for that week.  We plan on writing code to parse these and organize them, but haven't yet completed that work. The PDFs also have running cumulative and reports of CHIKV induced mortality, but we haven't extracted those yet.
+
+## San Juan Dengue Data
+### Filename
 Data/san_juan_dengue_data.csv
 
 ### San Juan dengue data for the 1990/1991 to 2012/2013 dengue seasons 

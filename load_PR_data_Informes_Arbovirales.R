@@ -1,6 +1,6 @@
 #SV Scarpino
 #July 2018
-#PDF to CSV for Puerto Rico data
+#PDF to CSV for Puerto Rico MoH Arboviral surveillance data (2016-present)
 
 #set working dir
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))#sets working directory to source file location
