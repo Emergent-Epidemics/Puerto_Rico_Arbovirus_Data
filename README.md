@@ -1,2 +1,5 @@
-# Puerto_Rico_Arbovirus_Data
-Original weekly reports are from the Departamento de Salud in PR http://www.salud.gov.pr/Estadisticas-Registros-y-Publicaciones/
+# Puerto Rico Arbovirus Data
+We are digitizing the weekly arbovirus reports from the Departamento de Salud in Puerto Rico.  They are originally provided as PDFs.  Please see the original data here  http://www.salud.gov.pr/Estadisticas-Registros-y-Publicaciones/.  It's really critical to point out that we haven't yet performed proper validation on these data and would very much welcome contributors who are either interested in suggesting code changes, validating data, and/or contributing new data sets.
+
+## Informes Arbovirales
+The first data set we've completed is Informes Arbovirales.  These PDFs report weekly confirmed cases of dengue (DENV), chikungunya (CHIKV), Zika (ZIKV), and filoviruses--along with suspected cases of arboviral diseases--on a weekly basis.  The cumulative columns are the running cumulative for each disease for the year (and it appears as though 2017 includes 2016) and it's possible for the difference in sequential weeks to be negative because cases can be "back corrected" causing a reduction in the total number of cumulative cases.  The "new" columns are the number of new cases reported that week.  However, they are reported as running 3-4 week totals.  The "Group" column contains the weeks one needs to use to generate the new case counts for that week.  We plan on writing code to parse these and organize them, but haven't yet completed that work.
