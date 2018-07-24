@@ -25,7 +25,7 @@ Data/dengue_1532462761.77886-years-2013-2014-2015-2016.csv
 #### Description
 There's some issue with many of the PDFs, which are preventing us from opening them programmatically, which we are still investigating.  These PDFs report weekly confirmed cases and suspected cases of dengue (DENV).  The "new" columns are the number of new cases reported that week.  However, in later years they are reported as running 3-4 week totals.  The "Group" column contains the weeks one needs to use to generate the new case counts for that week.  We plan on writing code to parse these and organize them, but haven't yet completed that work. The PDFs also have running cumulative and reports of DENV by serotype, but we haven't extracted those yet.
 
-## San Juan Dengue Data
+## San Juan dengue Data
 ### Filename
 Data/san_juan_dengue_data.csv
 
