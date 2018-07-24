@@ -18,8 +18,8 @@ The first data set we've completed is Informes Arbovirales.  These PDFs report w
 Data/san_juan_dengue_data.csv
 
 ### San Juan dengue data for the 1990/1991 to 2012/2013 dengue seasons 
-Description
-The dataset contains weekly dengue data for the San Juan-Carolina-Caguas Metropolitan Statistical Area. The dataset includes the following variables: 
+#### Description
+See https://predict.phiresearchlab.org/post/5a4fcc3e2c1b1669c22aa261 for more information. Here, we are directly copy/pasting from that website. The dataset contains weekly dengue data for the San Juan-Carolina-Caguas Metropolitan Statistical Area. The dataset includes the following variables: 
 
 * season: the transmission season; 
 * season_week: week of the season (not the calendar year - the season starts following the week with historically lowest dengue cases over the years 1990-2009); 
