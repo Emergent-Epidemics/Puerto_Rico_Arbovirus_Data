@@ -17,6 +17,14 @@ Data/chikungunya_1532458510.44679-years-2014-2015-2016.csv
 #### Description
 These PDFs report weekly confirmed cases and suspected cases of chikungunya (CHIKV) and confirmed cases of co-infection with dengue (although it appears as though there weren't any and the DoH stopped reporting this field in 2016) on a weekly basis.  The "new" columns are the number of new cases reported that week.  However, they are reported as running 3-4 week totals (expect in 2014 where they were presented weekly).  The "Group" column contains the weeks one needs to use to generate the new case counts for that week.  We plan on writing code to parse these and organize them, but haven't yet completed that work. The PDFs also have running cumulative and reports of CHIKV induced mortality, but we haven't extracted those yet.
 
+## dengue
+### Filename
+Data/ .csv
+
+### Puerto Rico level data on dengue data between 2013 - 2016
+#### Description
+These PDFs report weekly confirmed cases and suspected cases of dengue (DENV).  The "new" columns are the number of new cases reported that week.  However, in later years they are reported as running 3-4 week totals.  The "Group" column contains the weeks one needs to use to generate the new case counts for that week.  We plan on writing code to parse these and organize them, but haven't yet completed that work. The PDFs also have running cumulative and reports of DENV by serotype, but we haven't extracted those yet.
+
 ## San Juan Dengue Data
 ### Filename
 Data/san_juan_dengue_data.csv
