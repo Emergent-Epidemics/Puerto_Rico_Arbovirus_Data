@@ -140,8 +140,22 @@ for(i in years_var){
 }
 data_out <- data[data_order, ]
 
-#4. Save
+#4. Population sizes
+#from https://en.wikipedia.org/wiki/Demographics_of_Puerto_Rico
+# B.R. Mitchell. International historical statistics: the Americas, 1750–2000
+# "United Nations Statistics Division – Demographic and Social Statistics". Unstats.un.org. Retrieved 14 October 2017.
+# "Archived copy". Archived from the original on 2017-09-27. Retrieved 2017-09-09.
+#"Archived copy" (PDF). Archived from the original (PDF) on 2017-10-16. Retrieved 2017-10-03.
+pop_size_pr <- read.table("PR_pop_size.txt", sep = "\t", header = TRUE, stringsAsFactors = FALSE)
+
+years <- unique(data_out$Year)
+use_pops <- which(pop_size_pr$Year %in% years)
+pops <- pop_size_pr$Averagepopulation.x1000.[use_pops]*1000
+tab_years <- table(data_out$Year)
+data_out$population_est <- rep(pops, tab_years)
+
+#5. Save
 if(write_new == TRUE){
-  filename <- paste0("Data/dengue_", time_stamp,"-years-", paste0(years_var, collapse = "-"), ".csv")
+  filename <- paste0("Data/dengue_pops_", time_stamp,"-years-", paste0(years_var, collapse = "-"), ".csv")
   write.csv(x = data_out, file = filename, row.names = FALSE, quote = FALSE)
 }
